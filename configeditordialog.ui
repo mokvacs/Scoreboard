@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigEditorDialog</class>
+ <widget class="QDialog" name="ConfigEditorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QTimeEdit" name="timeEditQuarterLength">
+     <property name="maximumTime">
+      <time>
+       <hour>0</hour>
+       <minute>10</minute>
+       <second>0</second>
+      </time>
+     </property>
+     <property name="displayFormat">
+      <string>mm:ss</string>
+     </property>
+     <property name="time">
+      <time>
+       <hour>0</hour>
+       <minute>10</minute>
+       <second>0</second>
+      </time>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonStartStopTime">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="labelIncreaseFoulsRight">
+     <property name="text">
+      <string>Increase Fouls on the Right Side</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="labelIncreaseScoreLeft">
+     <property name="text">
+      <string>Increase Score on the Left Side</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QCheckBox" name="checkBoxStartTimout">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QCheckBox" name="checkBoxSoundBuzzerAfterTimeout">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="labelAppBackground">
+     <property name="text">
+      <string>Background Colour</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLabel" name="labelDecreaseScoreRight">
+     <property name="text">
+      <string>Decrease Score on the Right Side</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0" colspan="2">
+    <widget class="QLabel" name="labelAppearance">
+     <property name="text">
+      <string>Appearance</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="labelBuzzerAfterTimeout">
+     <property name="text">
+      <string>Sound Buzzer After Timeout</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="labelShortcutStartStopTime">
+     <property name="text">
+      <string>Start/Stop Time</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="labelShowControls">
+     <property name="text">
+      <string>Show Controls Below Scores</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="1">
+    <widget class="ColourSelectorWidget" name="pushButtonTextColourSelector">
+     <property name="text">
+      <string>Change</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="labelTimeoutLength">
+     <property name="text">
+      <string>Timeout Length</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="labelIncreaseScoreRight">
+     <property name="text">
+      <string>Increase Score on the Right Side</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="labelStartTimeout">
+     <property name="text">
+      <string>Start Timeout Immediately</string>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QTimeEdit" name="timeEditTimeoutLength">
+     <property name="displayFormat">
+      <string>mm:ss</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="labelDecreaseScoreLeft">
+     <property name="text">
+      <string>Decrease Score on the Left Side</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="labelQuarterLength">
+     <property name="text">
+      <string>Quarter Length</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="labelIncreaseFoulsLeft">
+     <property name="text">
+      <string>Increase Fouls on the Left Side</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="labelDecreaseFoulsLeft">
+     <property name="text">
+      <string>Decrease Fouls on the Left Side</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0">
+    <widget class="QLabel" name="labelTextColour">
+     <property name="text">
+      <string>Text Colour</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="labelGameSettings">
+     <property name="text">
+      <string>Game Settings</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="1">
+    <widget class="ColourSelectorWidget" name="pushButtonBackgroundColourSelector">
+     <property name="text">
+      <string>Change</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="1">
+    <widget class="QCheckBox" name="checkBoxShowControls">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QLabel" name="labelShortcuts">
+     <property name="text">
+      <string>Shortcuts</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QLabel" name="labelDecreaseFoulsRight">
+     <property name="text">
+      <string>Decrease Fouls on the Right Side</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonIncreaseScoreLeft">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonDecreaseScoreLeft">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonIncreaseFoulsLeft">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonDecreaseFoulsLeft">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonIncreaseScoreRight">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonDecreaseScoreRight">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonIncreaseFoulsRight">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="ShortcutButton" name="shortcutButtonDecreaseFoulsRight">
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ColourSelectorWidget</class>
+   <extends>QPushButton</extends>
+   <header>colourselectorwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ShortcutButton</class>
+   <extends>QPushButton</extends>
+   <header>shortcutbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ConfigEditorDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ConfigEditorDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
